@@ -17,8 +17,8 @@ Dataset [NYC Taxi Trips](https://www1.nyc.gov/site/tlc/about/tlc-trip-record-dat
 - Tracking all these processes with MLFlow via just several lines of Python code
 - Choosing the best model (with hyperparameters) to use after testing
 
-![Visualization of model hyperparameters experiments](/02-experiment-tracking/20240526-135431.png)
+![Visualization of model hyperparameters experiments](/02-experiment-tracking/homework/20240526-135431.png)
 
-![Visualization of final testing](/02-experiment-tracking/20240526-151059.png)
+![Visualization of final testing](/02-experiment-tracking/homework/20240526-151059.png)
 
 [MLFlow](https://github.com/mlflow/mlflow) makes all this work so easy!
