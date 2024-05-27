@@ -17,8 +17,18 @@ Dataset [NYC Taxi Trips](https://www1.nyc.gov/site/tlc/about/tlc-trip-record-dat
 - Tracking all these processes with MLFlow via just several lines of Python code
 - Choosing the best model (with hyperparameters) to use after testing
 
+## RandomForestRegressor model hyperparameters experiments
+
 ![Visualization of model hyperparameters experiments](/02-experiment-tracking/homework/20240526-135431.png)
+
+## Final tuning and testing
 
 ![Visualization of final testing](/02-experiment-tracking/homework/20240526-151059.png)
 
+## MLFlow
+
 [MLFlow](https://github.com/mlflow/mlflow) makes all this work so easy!
+- auto/explicit logging while tracking
+- fetching best experiments with quite advanced conditions
+- visual/table comparison of selected runs (params, metrics)
+- model versioning
