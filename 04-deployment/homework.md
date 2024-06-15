@@ -75,6 +75,7 @@ dependencies we use for the virtual env.
 
 What's the first hash for the Scikit-Learn dependency?
 
+"sha256:057b991ac64b3e75c9c04b5f9395eaf19a6179244c089afdebaad98264bff37c"
 
 ## Q5. Parametrize the script
 
@@ -86,14 +87,14 @@ Run the script for April 2023.
 What's the mean predicted duration? 
 
 * 7.29
-* 14.29
+* 14.29 <--
 * 21.29
 * 28.29
 
 Hint: just add a print statement to your script.
 
 
-## Q6. Docker container 
+## Q6. Docker container
 
 Finally, we'll package the script in the docker container. 
 For that, you'll need to use a base image that we prepared. 
