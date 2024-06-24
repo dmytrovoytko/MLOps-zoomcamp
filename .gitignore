@@ -171,3 +171,5 @@ mlruns.db
 artifacts/
 mlflow.db
 
+workspace/
+mlops/
