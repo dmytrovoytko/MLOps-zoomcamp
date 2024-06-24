@@ -37,10 +37,14 @@ Dataset [NYC Taxi Trips](https://www1.nyc.gov/site/tlc/about/tlc-trip-record-dat
 
 ## 5. Model Monitoring
 
-![Evidently AI dashboard](/05-monitoring/20240624-185649.png)
+![Evidently AI dashboard](/05-monitoring/evidently-dashboard.png)
 
-With the help of Collaborative AI observability platform [Evidently AI](https://github.com/evidentlyai/evidently/) we can easily evaluate, test, and monitor ML models and projects.
+With the help of Collaborative AI observability platform [Evidently AI](https://github.com/evidentlyai/evidently/) you can easily evaluate, test, and monitor ML models and projects.
 
 It's very flexible with a lot of metrics to observe.
 
-![Evidently AI dashboard panel](/05-monitoring/20240624-185844.png)
+![Evidently AI dashboard panel](/05-monitoring/evidently-panel.png)
+
+But even more flexibility and visualization options you can have when you integrate Evidently AI + [Grafana](https://github.com/grafana/grafana)
+
+![Grafana dashboard](/05-monitoring/grafana-dashboard.png)
