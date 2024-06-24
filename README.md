@@ -33,3 +33,14 @@ Dataset [NYC Taxi Trips](https://www1.nyc.gov/site/tlc/about/tlc-trip-record-dat
 - fetching best experiments with quite advanced conditions
 - visual/table comparison of selected runs (params, metrics)
 - model versioning, model registry
+
+
+## 5. Model Monitoring
+
+![Evidently AI dashboard](/05-monitoring/20240624-185649.png)
+
+With the help of Collaborative AI observability platform [Evidently AI](https://github.com/evidentlyai/evidently/) we can easily evaluate, test, and monitor ML models and projects.
+
+It's very flexible with a lot of metrics to observe.
+
+![Evidently AI dashboard panel](/05-monitoring/20240624-185844.png)
