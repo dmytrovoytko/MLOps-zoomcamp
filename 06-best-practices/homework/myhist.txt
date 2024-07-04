@@ -1,0 +1,41 @@
+botocore.utils.BadIMDSRequestError: <botocore.awsrequest.AWSRequest object at 0x7f3f6cb44d00>
+
+I figured it out. I just need to add the region
+
+aws --endpoint-url=http://localhost:4566 configure
+
+AWS Access Key ID [******************RW]:
+AWS Secret Access Key [******************7/]:
+Default region name [None]: us-east-1
+
+
+Structured access key ID
+
+You can specify a structured key like LSIAQAAAAAAVNCBMPNSG (which translates to account ID 000000000042). This must be at least 20 characters in length and must be decodable to an account ID.
+
+By default, LocalStack will only accept access keys that start with the LSIA... or LKIA... prefix. If keys with ASIA.../AKIA... prefix are provided, these are rejected and the fallback account ID 000000000000 is used. This is a safeguard to prevent misuse of production AWS access key IDs. To disable this safeguard, set the PARITY_AWS_ACCESS_KEY_ID configuration variable.
+
+
+    6  aws s3 help 
+ 
+   11  aws --endpoint-url=http://localhost:4566/ s3 mb s3://test-bucket
+
+   17  curl http://localhost:4566/_localstack/health 
+   21  curl http://localhost:4566/_localstack/config
+   22  curl http://localhost:4566/_localstack/diagnose
+   23  aws configure
+   25  aws --endpoint-url=http://localhost:4566/ configure
+   26  aws --endpoint-url=http://localhost:4566/ s3 mb s3://test-bucket
+   27  aws --endpoint-url=http://localhost:4566/ s3 cp README.md s3://test-bucket
+   28  aws --endpoint-url=http://localhost:4566/ s3 ls s3://test-bucket
+
+   35  pip install s3fs
+   36  python batch.py 
+   37  aws --endpoint-url=http://localhost:4566/ s3 ls s3://test-bucket
+
+
+
+to_parquet S3 error
+ImportError: Install s3fs to access S3
+
+pip install s3fs
